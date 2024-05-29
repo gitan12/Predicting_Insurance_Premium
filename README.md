@@ -56,10 +56,4 @@ Contributions are welcome! If you have any ideas to improve the project or find 
 For any questions or inquiries, please contact me at:
 - **Email:** anuragbelel01@gmail.com
 - **LinkedIn:** [Anurag Belel](http://www.linkedin.com/in/anurag-belel-44b0352a0)
-
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ---
