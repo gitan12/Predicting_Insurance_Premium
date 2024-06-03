@@ -42,7 +42,6 @@ To run this project, we'll need:
 ## 5. Steps Involved
 
 ### A. Importing Libraries
-First, we need to import the necessary libraries.
 
 ```python
 import pandas as pd 
@@ -53,7 +52,8 @@ from sklearn.metrics import mean_squared_error,mean_absolute_error,r2_score
 import warnings
 warnings.filterwarnings('ignore')
 ```
-To begin, we import the libraries that are essential to our data processing, model training, and assessment stages.This encompasses essential tools like **Pandas** for data manipulation and **Matplotlib** for visualization. From scikit-learn, a powerful Python ML library, we import specific functions and classes. These include **train_test_split** for dataset splitting, **LinearRegression** for model construction, and evaluation metrics such as **mean squared error, mean absolute error, and R-squared**. Importing the **warnings** module and suppressing warnings ensures a streamlined output, emphasizing the core aspects of our analysis without distractions.
+
+First, we need to import the necessary libraries that are essential to our data processing, model training, and assessment stages.This encompasses essential tools like **Pandas** for data manipulation and **Matplotlib** for visualization. From scikit-learn, a powerful Python ML library, we import specific functions and classes. These include **train_test_split** for dataset splitting, **LinearRegression** for model construction, and evaluation metrics such as **mean squared error, mean absolute error, and R-squared**. Importing the **warnings** module and suppressing warnings ensures a streamlined output, emphasizing the core aspects of our analysis without distractions.
 
 ### B. Loading the Dataset
 Next, we load the dataset from a CSV file.
