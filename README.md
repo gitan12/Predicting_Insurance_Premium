@@ -67,7 +67,6 @@ In the next step, we load our dataset from a CSV (Comma Separated Values) file u
 By executing this line of code, we're essentially bringing our dataset into our Python environment, allowing us to manipulate, analyze, and visualize the data using the powerful tools provided by the Pandas library.
 
 ### C. Data Exploration
-We explore the dataset to understand its structure and check for any missing values.
 
 ```python
 print(df.head())
@@ -89,7 +88,6 @@ By executing these commands, we can comprehensively explore our dataset, uncover
 We analyze the distribution of age and premium and the relationship between them.
 
 #### 1. Age Distribution
-We create a histogram to visualize the distribution of ages.
 
 ```python
 plt.figure(figsize=(8, 5))
@@ -103,7 +101,6 @@ plt.show()
 We create a histogram to visually represent the distribution of ages in our dataset. The histogram reveals how frequently different age groups occur within the data. This distribution provides insights into the demographic composition of the dataset, aiding in further analysis and modeling decisions.
 
 #### 2. Premium Distribution
-We create a histogram to visualize the distribution of premiums.
 
 ```python
 plt.figure(figsize=(8, 5))
@@ -118,7 +115,6 @@ plt.show()
 We utilize a histogram to illustrate the distribution of premiums within our dataset. This visualization offers insights into how premiums are distributed across different ranges.  This understanding of premium distribution is crucial for analyzing the variability and trends within the dataset, facilitating informed decision-making in subsequent stages of our analysis.
 
 #### 3. Relationship Between Age and Premium
-We create a scatter plot to visualize the relationship between age and premium.
 
 ```python
 plt.figure(figsize=(8, 5))
@@ -132,7 +128,6 @@ plt.show()
 We used a scatter plot to explore the relationship between age and premium within our dataset. This visualization allows us to observe any potential patterns or trends between these two variables. This visualization serves as a preliminary examination of the association between age and premium, providing a foundation for further analysis and modeling.
 
 #### 4. Calculate Correlation Coefficient
-We calculate the correlation coefficient to quantify the strength of the relationship between age and premium.
 
 ```python
 correlation = df["Age"].corr(df["Premium"])
@@ -142,7 +137,6 @@ print("Correlation Coefficient:", correlation)
 We calculate the correlation coefficient to quantify the strength of the relationship between age and premium within our dataset. The correlation coefficient measures the degree of linear association between two variables, ranging from -1 to 1. A coefficient close to 1 indicates a strong positive linear relationship, while a coefficient close to -1 suggests a strong negative linear relationship. A coefficient near 0 implies a weak linear relationship.
 
 ### E. Pre-processing
-We separate the features (independent variables) from the target (dependent variable).
 
 ```python
 X = df.drop('Premium', axis=1)
@@ -152,8 +146,7 @@ We split our dataset into features (X) and the target variable (y). The features
 The target variable, denoted by y, is assigned the "Premium" column, representing the variable we aim to predict. This separation allows us to train our machine learning model using the features to predict the target variable.
 
 ### F. Splitting Data into Training and Testing Sets
-We split the data into training and testing sets.
-
+.
 ```python
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
 ```
@@ -161,7 +154,6 @@ We partition our dataset into training and testing subsets using the train_test_
 Allocating 70% of the data for training and 30% for testing. This ensures that our model can learn patterns from the training data and then evaluate its performance on unseen test data, helping us assess its generalization ability.
 
 ### G. Building and Training the Linear Regression Model
-We create and train the linear regression model.
 
 ```python
 LR = LinearRegression()
@@ -170,7 +162,6 @@ LR.fit(X_train, y_train)
 We create a linear regression model and train it using the training data. This involves initializing a linear regression model object and fitting it to the training features (X_train) along with their corresponding target values (y_train). Through this process, the model learns the relationship between age and premium in the training dataset.
 
 ### H. Making Predictions
-We use the trained model to make predictions on the test set.
 
 ```python
 y_pred = LR.predict(X_test)
@@ -181,7 +172,6 @@ We utilize the trained linear regression model to predict premium values for the
 We evaluate the model using various metrics.
 
 #### 1. Mean Squared Error (MSE)
-Measures the average squared difference between predicted and actual values.
 
 ```python
 M = mean_squared_error(y_test, y_pred)
@@ -190,7 +180,6 @@ print("Mean Squared Error:", M)
 We calculate the Mean Squared Error (MSE), which quantifies the average squared difference between predicted and actual premium values.
 
 #### 2. Mean Absolute Error (MAE)
-Measures the average absolute difference between predicted and actual values.
 
 ```python
 MAE = mean_absolute_error(y_test, y_pred)
@@ -199,7 +188,6 @@ print("Mean Absolute Error:", MAE)
 We calculate the Mean Absolute Error (MAE), which measures the average absolute difference between predicted and actual premium values.
 
 #### 3. Root Mean Squared Error (RMSE)
-The square root of MSE, giving error in the same units as the target variable.
 
 ```python
 from math import sqrt
@@ -210,7 +198,6 @@ print("Root Mean Squared Error:", RMSE)
 We compute the Root Mean Squared Error (RMSE), which is the square root of the Mean Squared Error (MSE), providing error in the same units as the target variable.
 
 #### 4. R² Score
-Indicates the proportion of the variance in the dependent variable predictable from the independent variable.
 
 ```python
 R2_score = r2_score(y_test, y_pred)
@@ -218,8 +205,6 @@ print("R² Score:", R2_score)
 ```
 
 The R² score indicates the proportion of the variance in the dependent variable that is predictable from the independent variables. It is a measure of how well the regression model fits the observed data, with values ranging from 0 to 1. A higher R² score signifies a better fit.
-
-python
 
 
 ## 6. Conclusion
