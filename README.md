@@ -146,7 +146,7 @@ We split our dataset into features (X) and the target variable (y). The features
 The target variable, denoted by y, is assigned the "Premium" column, representing the variable we aim to predict. This separation allows us to train our machine learning model using the features to predict the target variable.
 
 ### F. Splitting Data into Training and Testing Sets
-.
+
 ```python
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
 ```
