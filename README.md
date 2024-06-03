@@ -1,6 +1,6 @@
-# Simple Linear Regression Project: Predicting Premium Based on Age
+#  Predicting Insurance Premium Based on Age using Machine Learning
 
-This project uses simple linear regression, a basic and essential machine learning technique, to predict the insurance premium amount based on a person's age. Here's a step-by-step guide to understand this project.
+In this project, we used an insurance premium dataset to predict the premium amount based on age using simple linear regression.
 
 ## Table of Contents
 1. Introduction
@@ -34,7 +34,7 @@ The dataset contains two columns:
 - **Premium**: The insurance premium amount paid by the individual.
 
 ## 4. Prerequisites
-To run this project, you'll need:
+To run this project, we'll need:
 - Python installed on your computer.
 - Basic understanding of Python programming.
 - Libraries: pandas, matplotlib, sklearn
@@ -47,9 +47,13 @@ First, we need to import the necessary libraries.
 ```python
 import pandas as pd 
 import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error,mean_absolute_error,r2_score
 import warnings
 warnings.filterwarnings('ignore')
 ```
+We initiate our project by importing crucial libraries necessary for various stages of our data processing, model training, and evaluation. This includes essential tools like Pandas and Matplotlib for data manipulation and visualization respectively. Additionally, we import specific functions and classes from scikit-learn, a comprehensive machine learning library in Python. This includes the `train_test_split` function for dataset splitting, the `LinearRegression` class for building our regression model, and evaluation metrics like mean squared error, mean absolute error, and R-squared. By importing the warnings module and suppressing warnings, we ensure a cleaner output during our analysis, focusing on the core aspects of our project without unnecessary distractions.
 
 ### B. Loading the Dataset
 Next, we load the dataset from a CSV file.
@@ -130,7 +134,6 @@ y = df['Premium']
 We split the data into training and testing sets.
 
 ```python
-from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
 ```
 
@@ -138,7 +141,6 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
 We create and train the linear regression model.
 
 ```python
-from sklearn.linear_model import LinearRegression
 LR = LinearRegression()
 LR.fit(X_train, y_train)
 ```
@@ -157,7 +159,6 @@ We evaluate the model using various metrics.
 Measures the average squared difference between predicted and actual values.
 
 ```python
-from sklearn.metrics import mean_squared_error
 M = mean_squared_error(y_test, y_pred)
 print("Mean Squared Error:", M)
 ```
@@ -166,7 +167,6 @@ print("Mean Squared Error:", M)
 Measures the average absolute difference between predicted and actual values.
 
 ```python
-from sklearn.metrics import mean_absolute_error
 MAE = mean_absolute_error(y_test, y_pred)
 print("Mean Absolute Error:", MAE)
 ```
@@ -184,7 +184,6 @@ print("Root Mean Squared Error:", RMSE)
 Indicates the proportion of the variance in the dependent variable predictable from the independent variable.
 
 ```python
-from sklearn.metrics import r2_score
 R2_score = r2_score(y_test, y_pred)
 print("R² Score:", R2_score)
 ```
