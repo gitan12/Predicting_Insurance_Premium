@@ -39,7 +39,7 @@ To run this project, we'll need:
 - Basic understanding of Python programming.
 - Libraries: pandas, matplotlib, sklearn
 
-## 5. Steps Involved
+## 5. Steps Involved in data preprocessing and model development
 
 ### A. Importing Libraries
 
