@@ -56,11 +56,15 @@ warnings.filterwarnings('ignore')
 First, we need to import the necessary libraries that are essential to our data processing, model training, and assessment stages.This encompasses essential tools like **Pandas** for data manipulation and **Matplotlib** for visualization. From scikit-learn, a powerful Python ML library, we import specific functions and classes. These include **train_test_split** for dataset splitting, **LinearRegression** for model construction, and evaluation metrics such as **mean squared error, mean absolute error, and R-squared**. Importing the **warnings** module and suppressing warnings ensures a streamlined output, emphasizing the core aspects of our analysis without distractions.
 
 ### B. Loading the Dataset
-Next, we load the dataset from a CSV file.
 
 ```python
 df = pd.read_csv("simplelinearregression.csv")
 ```
+
+In the next step, we load our dataset from a CSV (Comma Separated Values) file using the Pandas library.
+`pd.read_csv("simplelinearregression.csv")`: This part of the code uses the Pandas library (`pd`) to read the contents of a CSV file named "simplelinearregression.csv". The `read_csv()` function is a Pandas function specifically designed to read data from CSV files and create a DataFrame, which is a two-dimensional labeled data structure with rows and columns similar to a spreadsheet or SQL table.
+
+By executing this line of code, we're essentially bringing our dataset into our Python environment, allowing us to manipulate, analyze, and visualize the data using the powerful tools provided by the Pandas library.
 
 ### C. Data Exploration
 We explore the dataset to understand its structure and check for any missing values.
