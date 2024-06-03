@@ -53,7 +53,7 @@ from sklearn.metrics import mean_squared_error,mean_absolute_error,r2_score
 import warnings
 warnings.filterwarnings('ignore')
 ```
-We initiate our project by importing crucial libraries necessary for various stages of our data processing, model training, and evaluation. This includes essential tools like Pandas and Matplotlib for data manipulation and visualization respectively. Additionally, we import specific functions and classes from scikit-learn, a comprehensive machine learning library in Python. This includes the `train_test_split` function for dataset splitting, the `LinearRegression` class for building our regression model, and evaluation metrics like mean squared error, mean absolute error, and R-squared. By importing the warnings module and suppressing warnings, we ensure a cleaner output during our analysis, focusing on the core aspects of our project without unnecessary distractions.
+To begin, we import the libraries that are essential to our data processing, model training, and assessment stages.This encompasses essential tools like **Pandas** for data manipulation and **Matplotlib** for visualization. From scikit-learn, a powerful Python ML library, we import specific functions and classes. These include **train_test_split** for dataset splitting, **LinearRegression** for model construction, and evaluation metrics such as **mean squared error, mean absolute error, and R-squared**. Importing the **warnings** module and suppressing warnings ensures a streamlined output, emphasizing the core aspects of our analysis without distractions.
 
 ### B. Loading the Dataset
 Next, we load the dataset from a CSV file.
