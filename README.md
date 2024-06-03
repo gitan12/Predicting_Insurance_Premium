@@ -208,7 +208,15 @@ The R² score indicates the proportion of the variance in the dependent variable
 
 
 ## 6. Conclusion
-The project successfully demonstrates the application of simple linear regression to predict insurance premiums based on age. The evaluation metrics indicate the performance of the model, and the high correlation coefficient suggests a strong linear relationship between age and premium.
+- The simple linear regression model demonstrated exceptional performance in predicting premium amounts based on age.
+- Mean Squared Error (MSE) was close to zero (8.41e-30), indicating high accuracy.
+- Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE) were also close to zero (2.37e-15 and 2.90e-15 respectively), signifying excellent model performance.
+- With an R² score of 1.0, the model explains all the variability in premiums solely based on age, indicating a perfect fit.
+- The strong positive correlation between age and premium suggests that as individuals age, their premiums tend to increase.
+- This analysis underscores the effectiveness of simple linear regression in capturing and predicting linear relationships between variables.
+- The model can be utilized to make accurate premium predictions for individuals based on their age, providing valuable insights for insurance companies or other related domains.
+- 
+In conclusion, the simple linear regression model performed exceedingly well in predicting premiums based on age, with an R² score of 1.0, indicating a perfect fit of the model to the data.
 
 ## Important Points to Remember
 - Simple linear regression assumes a linear relationship between the independent and dependent variables.
