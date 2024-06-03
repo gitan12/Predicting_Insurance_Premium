@@ -1,6 +1,6 @@
 # Simple Linear Regression Project: Predicting Premium Based on Age
 
-This project uses simple linear regression, a basic and essential machine learning technique, to predict the insurance premium amount based on a person's age. Here's a step-by-step guide to understand this project, even if you're not a tech person.
+This project uses simple linear regression, a basic and essential machine learning technique, to predict the insurance premium amount based on a person's age. Here's a step-by-step guide to understand this project.
 
 ## Table of Contents
 1. Introduction
