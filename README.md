@@ -214,7 +214,8 @@ st.write("Prediction has been saved to the file.")
 
 ### Streamlit App Output
 
-![Streamlit App Output](./Result.jpeg)
+![Result](https://github.com/gitan12/Predicting_Insurance_Premium/assets/152585363/3da52d08-822f-4973-8911-3c90d238f38c)
+
 
 ## Conclusion
 
